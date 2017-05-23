@@ -1,5 +1,6 @@
 # Hand-Gesture-Recognition
-The program includes two parts so far, which are Automatic Hand Tracking and Feature Extraction.
+This is a design project proposed and conducted by Wenfei He, who is do a Master of Electrical and Electronic Engineering.
+The program includes two parts so far, which are Automatic Hand Tracking and Feature Extraction, the hand recogition part using ANN or other machine learning techniques will be implemented in future. 
 The first part regarding Automatic Hand Tracking is modified on the basis of a framework given by Chanseok Kang and Sanchul Kim
 This program of hand extraction is based and modified on the previous work published on the internet, the framework has been provided by Chanseok Kang and Sanchul Kim
 The source of the original code is: https://github.com/goodboychan/handGesture
