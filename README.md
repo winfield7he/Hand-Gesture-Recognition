@@ -20,4 +20,4 @@ In addition, with the purpose of improving the system robust, anther hand segmen
 
 Detected Issues:
 
-I have to admit that with the progress of this project, some issues exists in the current codes, which would be solved in future work.
+I have to admit that with the progress of this project, some issues exist in the current codes, which would be solved in future.
