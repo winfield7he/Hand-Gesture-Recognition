@@ -12,7 +12,7 @@ The current framework is modified by implemented a novel approach to segment han
 
 The second part regarding Feature Extraction: 
 
-This part is proposed to address the hand feature extraction, part of which like codes involving curvature and distance feature extraction are given by Rishabh_Sharma, who is currently doing his PHD in RMIT.
+This part is proposed to address the hand feature extraction, part of which like codes involving curvature and distance feature extraction are given by Rishabh Sharma, who is currently doing his PHD in RMIT.
 
 In this part, some innovative algorithms have also been implemented including hand palm direction determination and the relative axis system establishment. 
 
