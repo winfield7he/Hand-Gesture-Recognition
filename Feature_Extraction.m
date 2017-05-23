@@ -1,3 +1,5 @@
+% This part is about hand feature extraction, in which hand direction can be determined without arm direction and relative axis system has been establisheed.
+% The code is modified on the basis of the work conducted by Rishabh Sharma whith some innovative algorithms given by Wenfei He
 clear all; clc; % clear everthing 
 close all; A=16; % close everything
 I=imread('Lefthand_17.png'); % load depth image 
@@ -88,8 +90,7 @@ for u=1:1:a
         end
     end
 end
-% Determine the first axis using angles given in orientation normalization
-% and hand direction 
+% Determine the first axis using angles given in orientation normalization and hand direction 
 if Gredian_H==0
     for v=1:1:n1
         if(Temp1(m1,v)==0)
@@ -305,8 +306,7 @@ h = rectangle('Position',[px py D D],'Curvature',[1,1]);
 set(h,'edgecolor','r') 
 daspect([1,1,1]) 
 
-%The following part was designed to discard the wrist part, but this approach is
-%less reliable since the acquired hand edge has not been smooth very well,
+%The following part was designed to discard the wrist part, but this approach is less reliable since the acquired hand edge has not been smooth very well,
 %this issue will be addresse in future. 
 radius=R-5; 
 for i=1:a 
@@ -318,8 +318,7 @@ for i=1:a
     end
 end
 A2=BW-A;
-% discard wrist part and leave the palm area for distance feature
-% acquisition and normilization
+% discard wrist part and leave the palm area for distance feature acquisition and normilization
 for i=1:a    
     for j=1:b 
          if (A2(i,j)==1 )       
