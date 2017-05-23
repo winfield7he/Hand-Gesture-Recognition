@@ -1,5 +1,5 @@
 % This program of hand extraction is based and modified on the previous work published on the internet
-% Thanks to the framework by Chanseok Kang and Sanchul Kim
+% Thanks to the framework by Chanseok Kang and Sanchul Kim, and this improved and modified is given by Wenfei He.
 % The source of the original code is: https://github.com/goodboychan/handGesture
 %
 function Kinect_hand_tracking()
