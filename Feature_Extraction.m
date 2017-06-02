@@ -16,13 +16,17 @@ for i=1:1:a;
     end
 end
 Mask=Temp;
-z1=graythresh(Mask);  % Global trhesholding the image 
-M=im2bw(Mask,z1); 
-se2=strel('disk',10);           
-ft=imtophat(Mask,se2);            
-z2=graythresh(ft);              
-N=im2bw(Mask,z2);
-Mask=-M+N; 
+z1=graythresh(Mask); 
+z2 = 0.5*(min(Mask(:)) + max(Mask(:)));
+[a,b,c]=size(Mask);
+for u = 1:1:a
+    for v = 1:1:b
+        if Mask(u, v) < z1 &&  Mask(u, v) > z1-z2
+            Mask(u, v) = 1;
+        else Mask(u, v) = 0;
+        end
+    end
+end
 Out=Mask; % output the reslut as a mask
 BW=edge(Out,'sobel'); % using Sobel edge detector to extract hand edge
 
